@@ -10,6 +10,17 @@ dependencies:
   flutter:
     sdk: flutter
 
+  cupertino_icons: ^1.0.2
+  product_feature:
+    git:
+      url: https://github.com/nam-svh/product-feature.git
+      ref: main
+  checout_feature:
+    git:
+      url: https://github.com/nam-svh/checkout-feature.git
+      ref: main
+  go_router: ^13.2.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solum_app/navigator/app_router.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Solum App'),
-        ),
-      ),
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
+      title: 'Solum App',
     );
   }
 }
