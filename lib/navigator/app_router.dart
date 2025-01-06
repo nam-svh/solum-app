@@ -1,3 +1,4 @@
+import 'package:checout_feature/routes/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:product_feature/navigator/app_router.dart';
@@ -13,6 +14,7 @@ class AppRouter {
         builder: (context, state) =>  CheckoutPage(),
       ),
        ...ProductRouter.routes, ///  Imported routes from product feature
+       ...CheckoutRouter.routes, ///  Imported routes from checkout feature
     ],
   );
 }

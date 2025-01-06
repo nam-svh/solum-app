@@ -1,6 +1,6 @@
 import 'package:checout_feature/main.dart';
 import 'package:flutter/material.dart';
-import 'package:product_feature/main.dart';
+import 'package:product_feature/screens/category_screen.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({super.key});
@@ -14,16 +14,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Checkout'),
+        title: const Text('Main app'),
       ),
       body: Row(
         children: [
           Expanded(
-            child: ProductFeature(),
+            child: CategoryScreen(),
           ),
-          Expanded(
-            child: CheckoutApp()
-          )
+          Expanded(child: CheckoutApp())
         ],
       ),
     );

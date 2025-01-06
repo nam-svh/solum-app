@@ -30,7 +30,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: b885f7a9d2783889e4dfce233649a78ae7116a01
+      resolved-ref: "1fd52c408e24afa22894897ec2dbd3feeca721e3"
       url: "https://github.com/nam-svh/checkout-feature.git"
     source: git
     version: "0.1.0"
@@ -174,7 +174,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: a547ca7035847e23705c31f554132d9a79662429
+      resolved-ref: "9da741aaad8aae08fe88df2cd87162d6fc89e93a"
       url: "https://github.com/nam-svh/product-feature.git"
     source: git
     version: "1.0.0+1"
