@@ -19,6 +19,10 @@ dependencies:
     git:
       url: https://github.com/nam-svh/checkout-feature.git
       ref: main
+  share_models:
+    git:
+      url: https://github.com/nam-svh/share_models.git
+      ref: main
   go_router: ^13.2.5
 
 dev_dependencies:

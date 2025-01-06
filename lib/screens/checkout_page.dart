@@ -1,15 +1,12 @@
-import 'package:checout_feature/main.dart';
+import 'package:checout_feature/screens/checkout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:product_feature/screens/category_screen.dart';
+import 'package:share_models/modes/checkout_infor.dart';
 
-class CheckoutPage extends StatefulWidget {
-  const CheckoutPage({super.key});
+class CheckoutPage extends StatelessWidget {
+  final CheckoutInfor checkoutInfor;
+  const CheckoutPage({super.key, required this.checkoutInfor});
 
-  @override
-  State<CheckoutPage> createState() => _CheckoutPageState();
-}
-
-class _CheckoutPageState extends State<CheckoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,9 +16,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
       body: Row(
         children: [
           Expanded(
-            child: CategoryScreen(),
+            child: CategoryScreen(fromCheckOutScreen: true),
           ),
-          Expanded(child: CheckoutApp())
+          Expanded(child: CheckOutScreen(checkoutInfor: checkoutInfor))
         ],
       ),
     );

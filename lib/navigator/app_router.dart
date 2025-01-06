@@ -2,6 +2,7 @@ import 'package:checout_feature/routes/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:product_feature/navigator/app_router.dart';
+import 'package:share_models/modes/checkout_infor.dart';
 
 import '../screens/checkout_page.dart';
 
@@ -11,7 +12,10 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/checkout',
-        builder: (context, state) =>  CheckoutPage(),
+        builder: (context, state){
+          final checkoutInfor = state.extra as CheckoutInfor;
+          return CheckoutPage(checkoutInfor: checkoutInfor);
+        },
       ),
        ...ProductRouter.routes, ///  Imported routes from product feature
        ...CheckoutRouter.routes, ///  Imported routes from checkout feature
